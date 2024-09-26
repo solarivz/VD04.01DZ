@@ -41,13 +41,16 @@
             text-decoration: underline;
         }
 
-        /* Стили для футера */
+       /* Стили для футера */
         footer {
             background-color: #000000;
             color: white;
             padding: 20px 0;
             text-align: center;
-            margin-top: 50px;
+            margin-top: auto;
+            width: 100%;
+            position: relative;
+            bottom: 0;
         }
 
         footer a {
@@ -58,6 +61,22 @@
 
         footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Для предотвращения сдвига футера */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        main {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex-grow: 1; /* Заставляет основной контент занимать оставшуюся высоту */
         }
     </style>
 </head>
@@ -77,7 +96,7 @@
 <main class="container mt-5">
     <!-- Секция 1: Карточки -->
     <section>
-        <h2>Карточки</h2>
+        <h2>Карточки наших героев</h2>
             <div class="card-container">
         <!-- Карточка 1 -->
         <div class="card">
