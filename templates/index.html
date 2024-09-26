@@ -61,20 +61,15 @@
 </head>
 <body>
 
-<!-- Шапка сайта -->
-<header>
-    <div class="container">
-        <h1 class="h4">Таинственный остров</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Приключения</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Основная</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="card.html">О нас</a>
+    </li>
+</ul>
+
 
 <!-- Основной контент -->
 <main class="container mt-5">
@@ -84,13 +79,13 @@
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="image/1.jpg" class="d-block w-100" alt="Капитан Смоллет">
+                    <img src="/static/image/1.jpg" class="d-block w-100" alt="Капитан Смоллет">
                 </div>
                 <div class="carousel-item">
-                    <img src="image/2.jpg" class="d-block w-100" alt="Джон Сильвер">
+                    <img src="/static/image/2.jpg" class="d-block w-100" alt="Джон Сильвер">
                 </div>
                 <div class="carousel-item">
-                    <img src="image/3.jpg" class="d-block w-100" alt="Доктор">
+                    <img src="/static/image/3.jpg" class="d-block w-100" alt="Доктор">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -105,38 +100,7 @@
     </section>
 
     <!-- Секция 2: Карточки -->
-    <section class="mb-5">
-        <h2>Карточки</h2>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card">
-                    <img src="image/smollet.jpg" class="card-img-top" alt="Капитан Смоллет">
-                    <div class="card-body">
-                        <h5 class="card-title">Капитан Александр Смоллет</h5>
-                        <p class="card-text">Воевал в Бристольской резне.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card">
-                    <img src="image/djimmi.png" class="card-img-top" alt="Джим Хокинс">
-                    <div class="card-body">
-                        <h5 class="card-title">Джим Хокинс</h5>
-                        <p class="card-text">Молодой и отважный путешественник.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="card">
-                    <img src="image/silver.jpg" class="card-img-top" alt="Джон Сильвер">
-                    <div class="card-body">
-                        <h5 class="card-title">Джон Сильвер</h5>
-                        <p class="card-text">Известный пират и повар.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Секция 3: Аккордеон -->
     <section>
@@ -150,7 +114,6 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <img src="image/smollet.jpg" alt="Капитан Смоллет" style="width: 100%; height: auto;">
                         <p>Воевал в Бристольской резне.</p>
                         <p>Email: smollett@pirates.com</p>
                         <p>Дата рождения: 12.04.1750</p>
@@ -166,7 +129,6 @@
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <img src="image/djimmi.png" alt="Джим Хокинс" style="width: 100%; height: auto;">
                         <p>Молодой и отважный путешественник.</p>
                         <p>Email: jim@adventure.com</p>
                         <p>Дата рождения: 15.05.1765</p>
@@ -182,7 +144,6 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <img src="image/silver.jpg" alt="Джон Сильвер" style="width: 100%; height: auto;">
                         <p>Известный пират и повар.</p>
                         <p>Email: silver@pirates.com</p>
                         <p>Дата рождения: 10.06.1735</p>
